@@ -12,7 +12,7 @@ There are five pins in the TAP Controller; TMS (Test mode Select), Trst (Test re
 
 **TAP Controller**
 
-It is the important component of JTAG. It consists of 16 FSM States as shown in fig. 1.
+It is the important component of JTAG. It consists of 16 FSM States as shown in fig. 1. The state changes based on the value of TMS. The TMS value is mentioned in the line connecting each states.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73669849/232761135-9bc30a2d-ca1d-42e6-96ae-542aadb05527.png" width="400" height="500">
@@ -21,3 +21,7 @@ It is the important component of JTAG. It consists of 16 FSM States as shown in 
 Fig.1 -16 FSM States of TAP Controller
 </p>
 
+**Test bench or Execution of the Instruction**
+
+**1. Reset condition Check**
+The reset happens when the test reset pin is asserted or when the value of the tms is 5 consecutive ones ("11111"). The TAP Controller comes to test_logic_reset state once resetted.
