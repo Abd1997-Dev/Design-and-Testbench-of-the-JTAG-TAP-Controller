@@ -15,7 +15,7 @@ There are five pins in the TAP Controller; TMS (Test mode Select), Trst (Test re
 It is the important component of JTAG. It consists of 16 FSM States as shown in fig. 1.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/73669849/232761135-9bc30a2d-ca1d-42e6-96ae-542aadb05527.png" width="400" height="300">
+<img src="https://user-images.githubusercontent.com/73669849/232761135-9bc30a2d-ca1d-42e6-96ae-542aadb05527.png" width="400" height="500">
 </p>
 <p align = "center">
 Fig.1 -16 FSM States of TAP Controller
