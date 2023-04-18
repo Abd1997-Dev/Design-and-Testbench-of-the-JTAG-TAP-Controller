@@ -11,15 +11,13 @@ The IEEE 1149.1 standard is created to generalise the JTAG format. The functiona
 There are five pins in the TAP Controller; TMS (Test mode Select), Trst (Test reset), Tck (Test clock), TDI (Test Data input), and TDO (Test data output).
 
 **TAP Controller**
+
 It is the important component of JTAG. It consists of 16 FSM States as shown in fig. 1.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73669849/232761135-9bc30a2d-ca1d-42e6-96ae-542aadb05527.png" width="400" height="300">
 </p>
 <p align = "center">
-Fig.1 - decoding process of polar codes with length N = 8
+Fig.1 -16 FSM States of TAP Controller
 </p>
-
-
-![TAP controller](https://user-images.githubusercontent.com/73669849/232761135-9bc30a2d-ca1d-42e6-96ae-542aadb05527.png)
 
