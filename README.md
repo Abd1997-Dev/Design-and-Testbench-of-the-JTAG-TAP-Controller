@@ -23,7 +23,8 @@ Fig.1 -16 FSM States of TAP Controller
 
 **Test bench or Execution of the Instruction**
 
-**1. Reset condition Check**
+**1. Reset condition Check:**
 The reset happens when the test reset pin is asserted or when the value of the tms is 5 consecutive ones ("11111"). The TAP Controller comes to test_logic_reset state once resetted.
 
-**2. Execution of the Bypass Instruction**
+**2. Execution of the Bypass Instruction:**
+To execute this instruction, first the corresponding instruction has to be loaded into the instruction register. This can be achieved by sending data through Test Data input and keeping shift_ir state in FSM as high. The instruction for bypass is given by the opencore verilog tap defines is "1111". Once this instruction is loaded into the instruction register then whatever value we are sending through the tdi while keeping shift_dr state as high will be placed in the one bit register Bypass Register and transfered to the following IC which is in the design.
