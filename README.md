@@ -4,7 +4,7 @@ The JTAG (Joint Test Action Group) is used prevalent for the debugging and testi
 
 **Introduction**
 
-The IEEE 1149.1 standard is created to generalise the JTAG format. The functionality of the JTAG is to Debug access through user data register and to boundary scan through boundary scan register. JTAG is a feature found in relatively high pin count devices. The main component of the JTAG is the TAP (Test Access Port) controller. It consists of 16 FSM States in it. This repository consists of the design of the TAP Controller.
+The IEEE 1149.1 standard is created to generalise the JTAG format. The functionality of the JTAG is to Debug access through user data register and to boundary scan through boundary scan register. JTAG is a feature found in relatively high pin count devices. The main component of the JTAG is the TAP (Test Access Port) controller. It consists of 16 FSM States in it. This repository consists of the design and verification of the TAP Controller.
 
 ##### **Note:** My contribution in this repository is to write the testbench for executing various instructions of JTAG and reset condition. The design code is taken from the opencore.org authored by Igor Mohor.
 
@@ -25,3 +25,5 @@ Fig.1 -16 FSM States of TAP Controller
 
 **1. Reset condition Check**
 The reset happens when the test reset pin is asserted or when the value of the tms is 5 consecutive ones ("11111"). The TAP Controller comes to test_logic_reset state once resetted.
+
+**2. Execution of the Bypass Instruction**
